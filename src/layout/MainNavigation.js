@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink, useRouteLoaderData} from 'react-router-dom';
+import {Form, NavLink, useRouteLoaderData} from 'react-router-dom';
 import styles from './MainNavigation.module.scss';
 
 const MainNavigation = () => {
@@ -26,9 +26,11 @@ const MainNavigation = () => {
                     </li>
 
                     {userData &&
-                        <li>
-                            <button style={{width: '100%'}}>Logout</button>
-                        </li>
+                        <Form action='/logout' method='POST'>
+                            <li>
+                                <button style={{width: '100%'}}>Logout</button>
+                            </li>
+                        </Form>
                     }
 
                 </ul>
