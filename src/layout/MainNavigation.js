@@ -1,8 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import styles from './MainNavigation.module.scss';
 
 const MainNavigation = () => {
+
+
 
   const activeFn = ({ isActive }) => {
     // NavLink 컴포넌트에 className프롭스에 함수를 전달하면
